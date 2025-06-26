@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HiLikes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #1d0f0f, #ff7f2a);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    header {
+      margin-top: 20px;
+    }
+
+    header h1 a {
+      text-decoration: none;
+      color: white;
+      font-size: 2em;
+    }
+
+    .content {
+      max-width: 1200px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 2em;
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    .subtitle {
+      font-size: 1em;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .buttons a img {
+      height: 50px;
+    }
+
+    .phone-container {
+      position: relative;
+      width: 400px;
+      max-width: 90vw;
+      margin: 30px auto;
+    }
+
+    .phone-img {
+      width: 150%;
+      display: block;
+    }
+
+    .video-overlay {
+      position: absolute;
+      top: 6%;
+      left: 31.5%;
+      width: 90%;
+      height: 87.2%;
+      border-radius: 3.5rem;
+      overflow: hidden;
+    }
+
+    .video-overlay video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    footer {
+      margin: 40px 0;
+      font-size: 0.9em;
+      color: #f0e6e6;
+    }
+
+    footer a {
+      color: #f0e6e6;
+      text-decoration: underline;
+      margin: 0 10px;
+    }
+
+    @media(min-width: 768px) {
+      .content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+
+      .text-container {
+        flex: 1;
+        padding-right: 20px;
+      }
+
+      .phone-container {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="/">HiLikes</a></h1>
+  </header>
+
+  <div class="content">
+    <div class="text-container">
+      <div class="title">Simple Sharing,<br />Positive Vibes</div>
+      <div class="subtitle">
+        Discover the beauty in life's little moments at HiLikes, where sharing your happy moments can spread smiles to faces worldwide.
+      </div>
+      <div class="buttons">
+        <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play"></a>
+      </div>
+    </div>
+
+    <div class="phone-container">
+      <img src="C:\Users\user\Downloads\smartphone-removebg-preview.png" alt="Phone" class="phone-img">
+      <div class="video-overlay">
+        <video autoplay muted loop playsinline>
+          <source src="C:\Users\user\Downloads\Website demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="C:\Users\user\Downloads\privacy-policy.html">Privacy policy</a>
+      <a href="C:\Users\user\Downloads\terms-of-service.html">Terms of service</a>
+      <a href="https://forms.gle/bxKnCGcpS4Zk2RwRA">Help</a>
+    </p>
+    <p>contact@telitelo.com | +60 17 808 5313</p>
+    <p>&reg; 2025 Telitelo Technology All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
