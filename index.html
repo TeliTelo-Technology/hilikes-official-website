@@ -45,18 +45,11 @@
       margin: 20px 0 10px;
     }
 
-    .text-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;      
-    }
-    
     .subtitle {
       font-size: 1em;
       max-width: 90%;
       margin-bottom: 30px;
+      text-align: center;
     }
 
     .buttons {
@@ -75,7 +68,7 @@
       position: relative;
       width: 100%;
       max-width: 360px;
-      margin: 30px auto;
+      margin:30px auto;
     }
 
     .phone-img {
@@ -85,18 +78,33 @@
 
     .video-overlay {
       position: absolute;
-      top: 6%;
-      left: 4.5%;
-      width: 91%;
-      height: 88%;
-      border-radius: 4.5rem;
+      top: 5.5%;
+      left: 21.1%;
+      width: 60%;
+      height: 89%;
       overflow: hidden;
+      border-radius: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      pointer-events: none;
     }
 
-    .video-overlay video {
+    .video-wrapper {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      transform: scale(1);
+      transform-origin: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 2rem;
     }
 
     footer {
@@ -121,7 +129,8 @@
       }
 
       .text-container {
-        align-items: flex-start;
+        flex: 1;
+        padding-right: 20px;
         text-align: left;
       }
 
@@ -153,13 +162,15 @@
     </div>
 
     <div class="phone-container">
-      <img src="smartphone-removebg-preview.png" alt="Phone" class="phone-img">
       <div class="video-overlay">
-        <video autoplay muted loop playsinline>
-          <source src="Website demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="video-wrapper">
+          <video autoplay muted loop playsinline>
+            <source src="Website demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
+     <img src="smartphone-removebg-preview.png" alt="Phone Frame" class="phone-img">
     </div>
   </div>
 
